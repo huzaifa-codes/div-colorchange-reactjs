@@ -1,16 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 export default function Divs({ color, onClick }) {
   return (
     <div
       onClick={onClick}
-      style={{
-        width: '100px',
-        height: '100px',
-        border: '1px solid black',
-        backgroundColor: color,
-        cursor: 'pointer',
-      }}
+      className="w-[100px] h-[100px] border border-black cursor-pointer rounded-md shadow-md hover:scale-105 transition-transform duration-200"
+      style={{ backgroundColor: color }}
     ></div>
-  )
+  );
 }
